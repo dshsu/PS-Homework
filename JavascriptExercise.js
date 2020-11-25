@@ -1,0 +1,15 @@
+var one, two, three, four, five, six, seven, eight, nine, ten;
+ one = 1;
+two=2;
+ three=3;
+ four=4;
+ five=5;
+ six=6;
+ seven=7;
+ eight=8;
+ nine=9;
+ ten=10;
+var avg1=((one+two+three+four+five)/5);
+var avg2=((six+seven+eight+nine+ten)/5);
+var finalavg=((avg1+avg2)/2);
+console.log("the averages are ", avg1, avg2, finalavg);
