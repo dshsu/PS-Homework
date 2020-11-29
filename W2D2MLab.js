@@ -1,10 +1,15 @@
 //Part 1 - Using a while loop, print out all prime numbers between 0 - 20
-let count=0;
-var divisor=1;
-while (count<=20) {
-if (count%divisor!=0 && count>=divisor) {
-  divisor++;
+let count = 0;
+while (count <= 20)
+if (count<4) {
+  console.log(count);
+  count++;
 }
+else {
+  if (count%2!=0)
+  if (count%3!=0)
+    console.log(count);
+    count++;
 }
 //Part 2- Use a while loop to add up the numbers 1 to 20 into one variable.
 //Print out the sum at the end
