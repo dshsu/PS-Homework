@@ -1,0 +1,18 @@
+.parent
+{
+  display:flex;
+  flex-wrap:wrap;
+justify-content:center;
+  justify-content:space-between;
+  padding:10px;
+border:solid;
+}
+.child{
+  color:black;
+  font-family:sans-serif;
+  font-size:14px;
+  background:#fff99f;
+  width: 40%;
+  border:solid green;
+  padding:10px;
+}
