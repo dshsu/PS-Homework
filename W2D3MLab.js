@@ -60,8 +60,8 @@ function vowelCount(input) {
     var vCount=0;
     for (var i = 0; i < strlong; i++) {
 //checks to see if each character in the array is a vowel
-      isCharacterAVowel(string[i]);
-      if (true)
+      var vcheck=isCharacterAVowel(string[i]);
+      if (vcheck=true)
 //counts the vowels
         vCount++;
       }
