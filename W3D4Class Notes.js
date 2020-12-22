@@ -1,4 +1,4 @@
-Review this code in your text editor:
+// Review this code in your text editor:
 
 let hotelCalifornia = {
     name: 'Hotel California',

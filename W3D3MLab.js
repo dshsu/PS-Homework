@@ -16,6 +16,15 @@ class vendingMachine {
     return `You just bought ${this.snackName[x]} `+`for $${this.snackPrice[x]}.`;
   }
 }
+
+var snackSupply=[snack1={brand:butterfinger, price:4}, snack2={brand:reeses, price:6}, snack3{brand:kitkats, price:1}]
+// class Snack{
+//   constructor(cost, brand){
+//     this.cost=cost;
+//     this.brand=brand;
+//   }
+//   [Snack1(brand:butterfinger, price:4), snack2(brand:reeses, price:6), snack3(brand:kitkats, price:1)]
+// }
 let snackBox = new vendingMachine
 (
   [3,1,6],
