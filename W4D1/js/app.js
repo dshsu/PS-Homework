@@ -1,10 +1,19 @@
 console.log("Stranger things are coming!");
-
+console.log("hi");
+// $(()=>{
 const addH2=()=>{
-  let $h2=$('<h2').text('Just getting started');
+  // $newH2 = $('<h2>').text('GOOD MORNING!');
+   let $h2=$('<h2>').text('Just getting started');
   $('body').append($h2);
+  // $('body').append($newH2);
 }
+const changeH2 = () =>{
+  $('h2').text=('Getting Warmed Up');
+}
+$(()=>{
 addH2();
+changeH2();
+});
 
 $(()=>{
   $.ajax[{
