@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+    text-align: center;
+    color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.results{
+    color: black;
+    text-align: center;
+}
+/* need a format for the input box
+need a format for the borough buttons
+need a layout for the 311 results
+need a format for the reveal response button  */
