@@ -34,15 +34,16 @@ for(let i = 1; i <= 6; i++){
 console.log(alienFleet);
 
 //loops through the array and fights each ship
-while (alienFleet.length > 0) {
+let replay = true;
+while (alienFleet.length > 0 && replay == true) {
     let activeAlien = alienFleet.pop();
     console.log("The battle begins....");
     while (activeAlien.hull>0 && player.hull>0){
         activeAlien.receiveAttack(player);
-        console.log(`The alien ship's hull is now at ${activeAlien.hull}.`)
+        console.log(`Direct hit! The alien ship's hull is now at ${activeAlien.hull}.`)
         if (activeAlien.hull>0){
             player.receiveAttack(activeAlien);
-            console.log(`Your ship's hull is now at ${player.hull}.`)
+            console.log(`Direct Hit! Your ship's hull is now at ${player.hull}.`)
             if (player.hull<=0){
                 console.log(`HULL BREACH! You have been defeated.`);
                 break;
@@ -50,6 +51,14 @@ while (alienFleet.length > 0) {
             }
         else if (activeAlien.hull<=0){
             console.log(`You defeated the alien ship! Congratulations, Captain!`)
+            console.log(`${alienFleet.length} ships remain.`);
+            replay = confirm("Do you wish to continue? Press OK to continue the attack and Cancel to retreat.");
+            if (replay == false) {
+              console.log("You have chosen to retreat. GAME OVER.");
+              break;
+            }
+            else
+            continue;
         }
         }
 
