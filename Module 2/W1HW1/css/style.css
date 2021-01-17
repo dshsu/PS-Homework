@@ -1,57 +1,62 @@
  :root{
     font-family: Arial, Helvetica, sans-serif;
 }
-
-body{
-    background-color: rgb(156, 150, 150);
-    padding: 2% 2%;
-    height: auto;
-    font: "Helvetica";
-    display:grid;
-    grid-template-columns: 15vw 15vw 15vw 15vw;
-  grid-template-rows: 15vw 15vw 10vw;
-}
-p{
-    font-size: 24px;
-}
-#dash{
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 10px 10px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  float: left;
-  font: 14px/24px "Helvetica";
-  background-color: rgb(99, 94, 94);
-  color:white;
-  height:300px;
-  border-style:solid;
-}
-#review {
-    grid-area: 1 / 2 / 1 / 3;
-    background-color: rgb(99, 94, 94);
-    grid-gap: 10% 10%;
-    padding: 1% 1%;
-    margin: 1% 1%;
-}
-#rating {
-    grid-area: 3/span 1;
+#module {
     display: grid;
-    background-color: rgb(99, 94, 94);
-    padding: 1% 1%;
-    margin: 1% 1%;
-}
-#analysis {
+    grid-template-areas:
+      "dash review rating analysis"
+      "dash visitors visitors visitors"
+      "dash visitors visitors visitors";
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /*Vertical navigation bar*/
+  #module > dash {
+    justify-content: center;
+    align-self: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 300px;
+    border-radius: 10px;
+    grid-area:dash;
+  }
+  /*Review section style*/
+  #module > review {
     
-    grid-area: 4/span 1;
-    background-color: rgb(99, 94, 94);
-    padding: 1% 1%;
-    margin: 1% 1%;
-}
-#visitors {
-    
-    grid-area: 2/span 3;
-    background-color: rgb(99, 94, 94);
-    padding: 1% 1%;
-    margin: 1% 1%;
-}
+    width: 200px;
+    text-align: center;
+    height: 34vh;
+    border-radius: 10px;
+    border:solid;
+    grid-area: review;
+  }
+  /*Rating section style*/
+  #module > rating {
+    width: 200px;
+    text-align: center;
+    height: 34vh;
+    border-radius: 10px;
+    border:solid;
+    grid-area: rating;
+  }
+  /*Sentiment section style*/
+  #module > analysis {
+    width: 200px;
+    text-align: center;
+    height: 300px;
+    border-radius: 10px;
+    border:solid;
+    grid-area: analysis;
+  }
+  /*Visitor section style*/
+  #module > visitors {
+    width: 200px;
+    text-align: center;
+    height: 34vh;
+    border-radius: 10px;
+    border:solid;
+    grid-area: visitors;
+  }
