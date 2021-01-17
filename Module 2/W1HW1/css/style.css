@@ -1,13 +1,16 @@
  :root{
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+  display:grid;
+}
 #module {
     display: grid;
     grid-template-areas:
       "dash review rating analysis"
       "dash visitors visitors visitors"
       "dash visitors visitors visitors";
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(189, 184, 184, 0.3);
   }
   
   /*Vertical navigation bar*/
@@ -25,12 +28,12 @@
   }
   /*Review section style*/
   #module > review {
-    
     width: 200px;
     text-align: center;
     height: 34vh;
     border-radius: 10px;
     border:solid;
+    background-color: rgba(100, 99, 99, 0.712);
     grid-area: review;
   }
   /*Rating section style*/
@@ -40,6 +43,7 @@
     height: 34vh;
     border-radius: 10px;
     border:solid;
+    background-color: rgba(100, 99, 99, 0.712);
     grid-area: rating;
   }
   /*Sentiment section style*/
@@ -49,6 +53,7 @@
     height: 300px;
     border-radius: 10px;
     border:solid;
+    background-color: rgba(100, 99, 99, 0.712);
     grid-area: analysis;
   }
   /*Visitor section style*/
@@ -58,5 +63,6 @@
     height: 34vh;
     border-radius: 10px;
     border:solid;
+    background-color: rgba(100, 99, 99, 0.712);
     grid-area: visitors;
   }
