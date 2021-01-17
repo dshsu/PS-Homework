@@ -4,7 +4,7 @@
 body {
   display:grid;
 }
-#module {
+#wrapper {
     display: grid;
     grid-template-areas:
       "dash review rating analysis"
@@ -13,56 +13,40 @@ body {
     background-color: rgba(189, 184, 184, 0.3);
   }
   
-  /*Vertical navigation bar*/
-  #module > dash {
+  #module{
     justify-content: center;
     align-self: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 150px;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 300px;
+    width: 200px;
+    height: 34vh;
     border-radius: 10px;
+    text-align: center;
+    background-color: rgba(100, 99, 99, 0.712);
+    border:solid;
+  }
+  /*Vertical navigation bar*/
+  #module > dash {
+    width: 150px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: left;
     grid-area:dash;
   }
   /*Review section style*/
   #module > review {
-    width: 200px;
-    text-align: center;
-    height: 34vh;
-    border-radius: 10px;
-    border:solid;
-    background-color: rgba(100, 99, 99, 0.712);
     grid-area: review;
   }
   /*Rating section style*/
   #module > rating {
-    width: 200px;
-    text-align: center;
-    height: 34vh;
-    border-radius: 10px;
-    border:solid;
-    background-color: rgba(100, 99, 99, 0.712);
     grid-area: rating;
   }
   /*Sentiment section style*/
   #module > analysis {
-    width: 200px;
-    text-align: center;
-    height: 300px;
-    border-radius: 10px;
-    border:solid;
-    background-color: rgba(100, 99, 99, 0.712);
     grid-area: analysis;
   }
   /*Visitor section style*/
   #module > visitors {
-    width: 200px;
-    text-align: center;
-    height: 34vh;
-    border-radius: 10px;
-    border:solid;
-    background-color: rgba(100, 99, 99, 0.712);
     grid-area: visitors;
   }
