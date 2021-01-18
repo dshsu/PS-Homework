@@ -1,0 +1,26 @@
+body {
+    margin: 1em;
+    padding: 1em;
+    font-family: ‘Poppins’, sans-serif;
+    background: #002966;
+    text-align: center;
+  }
+  div{
+    margin: auto;
+    width: 80%;
+    padding: 1em;
+    background-color: khaki;
+  }
+  ul {
+      list-style-type: none;
+      background-color: lightblue;
+  }
+  #item{
+    background:#3784b8;
+  }
+  #brand{
+    background: #2792da;
+  }
+  #units{
+    background: #3a89bd;
+  }
