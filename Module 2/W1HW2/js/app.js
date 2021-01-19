@@ -30,7 +30,8 @@ class App extends React.Component {
         })
     }
     render() {
-        return (<div>
+        return (
+        <div>
             <form onSubmit={this.submit}>
                 <input id="item" onChange={this.itemChange} type='text' value={this.state.item} placeholder="What Do You Want?"></input>
                 <input id="brand" onChange={this.itemChange} type='text' value={this.state.brand} placeholder="What Kind?"></input>
@@ -43,7 +44,8 @@ class App extends React.Component {
                         this.state.groceries.map(
                             (grocery) => !grocery.isPurchased
                             ? <li>
-                                {grocery.item}</li>
+                                {grocery.item}
+                            </li>
                             : "")
                     }
                 </ul>
