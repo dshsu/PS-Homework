@@ -1,8 +1,15 @@
 body {
-	background-color: #3e5f73; /*blue*/
+	background: linear-gradient(45deg, rgb(22, 22, 185), rgb(99, 12, 126)); /*blue*/
 	text-align: center;
+	
 }
-
+h1{
+	font-family: 'Courier New', Courier, monospace;
+	color:yellow;
+}
+h2{
+	text-transform: uppercase;
+}
 button {
 	margin: .5rem;
 	padding: .3rem;
@@ -10,11 +17,11 @@ button {
 	border: unset;
 }
 
-#inc {
+#increase {
 	background-color: #6191b5 /*blue*/
 }
 
-#dec {
+#derease {
 	background-color: #fe938c; /*pink*/
 }
 

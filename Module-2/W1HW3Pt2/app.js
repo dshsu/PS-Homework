@@ -45,39 +45,28 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='app'>
-				<h1 className='title'> Welcome to Jeopardy!</h1>
+				<h1 className='title'> This Is Jeopardy!</h1>
 
-				<LabeledData title="Score" value={this.state.score}/>
+				<h2> Score:{this.state.score}</h2>
 
 				<div >
-					<button id="dec" onClick={() => this.changeScore(-this.state.points)}>Decrease</button>
-					<button id="inc" onClick={() => this.changeScore(this.state.points)}>Inscrease</button>
+					<button id="decrease" onClick={() => this.changeScore(-this.state.points)}>Decrease</button>
+					<button id="increase" onClick={() => this.changeScore(this.state.points)}>Increase</button>
 					<button id="reset" onClick={() => this.changeScore(-this.state.score)}>Reset</button>
 				</div>
 
 				<h2 id="lets-play"> Let's Play! </h2>
 				<button id="get-clue" onClick={this.getClue}> Get Clue </button>
 
-				<LabeledData title="Category" value={this.state.category}/>
-				<LabeledData title="Points" value={this.state.points}/>
-				<LabeledData title="Clue" value={this.state.prompt}/>
+				<h2> Category: {this.state.category} </h2>
+				<h3> Points: {this.state.points} </h3>
+				<h3> Clue: <p>{this.state.prompt}</p> </h3>
 
 				<button id="reveal" onClick={this.revealAnswer}> Click to Reveal Answer </button>
-				{this.state.isRevealed? <LabeledData title="Answer" value={this.state.answer}/>: null}
+				{this.state.isRevealed ? <h3>{this.state.answer}</h3>: null}
 			</div>
 			)
 	}
 }
 
-class LabeledData extends React.Component {
-	render() {
-		return (
-			<h2 className="label">{this.props.title}:
-				<span className="value"> {this.props.value}</span>
-			</h2>
-			)
-	}
-}
-
-
-ReactDOM.render(<App/>,document.getElementById('root'));
+ReactDOM.render(<App/>,document.getElementById('container'));
