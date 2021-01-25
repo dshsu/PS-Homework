@@ -9,8 +9,8 @@ class Playlist extends Component{
       }
     }
     render(){
-      return(
-        <div className = "tunr-container">
+      return[
+<div className = "tunr-container">
           <div className = 'playlist'>
             <header>
               <h1>Not-Spotify</h1>
@@ -33,5 +33,5 @@ class Playlist extends Component{
               </div>
               </div>
               </div>
-      )}
+      ]}
                 }
