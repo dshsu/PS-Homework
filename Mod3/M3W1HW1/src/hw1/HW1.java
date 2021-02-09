@@ -18,7 +18,7 @@ public class HW1 {
 		// TODO Auto-generated method stub
 		Random rd = new Random(); 
 	     boolean squawk = (rd.nextBoolean()); 
-		int time = (int)(Math.random()*24);
+		int time = (int)(Math.random()*23);
 		getUp(squawk, time);
 	}
 }
